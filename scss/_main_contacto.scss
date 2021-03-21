@@ -16,17 +16,20 @@
             width: 100%;
             border-bottom: 1px solid $border-color-contacto-contactinfo-h4;
             font-weight: 600;
-            margin-bottom: 30px;    
+            margin-bottom: 30px; 
+            color: $font-color-contacto-contactinfoh4-input;     
         }
 
         h5 {
             font-size: $font-size-contacto-contactinfo-h5;
             width: 100%;
-            font-weight: 600;    
+            font-weight: 600;
+            color: $font-color-contacto-contactinfoh5-input;    
         }
 
         p{
             margin-bottom: 15px;    
+            color: $font-color-contacto-contactinfop-input;  
         }
     }
 

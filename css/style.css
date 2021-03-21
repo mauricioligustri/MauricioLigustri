@@ -4,16 +4,22 @@
 /** Header **/
 /** Banners **/
 /** Contacto **/
+/** Reservas **/
 /** Whatsapp **/
 /** Info Bar **/
 /** Carousels **/
+/** Servicios **/
+/** Nosotros **/
 /** FONTS SIZES **/
 /** GLOBAL **/
 /** FOOTER **/
 /** HEADER **/
 /** BANNERS **/
 /** CONTACTO **/
+/** RESERVAS **/
 /** WHATSAPP **/
+/** SERVICIOS **/
+/** NOSOTROS **/
 /** Global **/
 html {
   font-size: 62.5%;
@@ -23,7 +29,7 @@ body {
   font-family: 'New Rocker', cursive;
   font-size: 1.6rem;
   font-weight: 400;
-  background-color: #ffffff; }
+  background-color: black; }
 
 h1,
 h2,
@@ -60,20 +66,21 @@ p {
 body::-webkit-scrollbar {
   width: 8px;
   height: 8px;
-  background-color: #000000; }
+  background-color: blueviolet; }
 
 body::-webkit-scrollbar-thumb {
-  background: #6b6b6b; }
+  background: blueviolet; }
 
 /** PreLoader **/
-#preloder {
+#preloader {
   position: fixed;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
   z-index: 999999;
-  background: #000; }
+  background: #000;
+  color: white; }
 
 .loader {
   width: 40px;
@@ -89,11 +96,11 @@ body::-webkit-scrollbar-thumb {
 @keyframes loader {
   0% {
     transform: rotate(0deg);
-    border: 4px solid #00296B;
+    border: 4px solid blueviolet;
     border-left-color: transparent; }
   50% {
     transform: rotate(180deg);
-    border: 4px solid #00509D;
+    border: 4px solid white;
     border-left-color: transparent; }
   100% {
     transform: rotate(360deg);
@@ -155,16 +162,16 @@ body::-webkit-scrollbar-thumb {
     .navbar.navbar-dark .navbar-nav .nav-link:focus, .navbar.navbar-dark .navbar-nav .nav-link:hover {
       color: #ffffff; }
     .navbar.navbar-dark .navbar-nav .nav-link.active {
-      color: #ffd500;
+      color: blueviolet;
       font-weight: 600; }
   .navbar.fixed-top {
     position: fixed;
     animation: navbar-animation 0.6s;
     background-color: #000000; }
     .navbar.fixed-top.navbar-dark .navbar-nav .nav-link.active {
-      color: #ffd500; }
+      color: blueviolet; }
     .navbar.fixed-top.navbar-dark .navbar-nav .nav-link::after {
-      background-color: #fdc500; }
+      background-color: blueviolet; }
 
 @media screen and (max-width: 767px) {
   .navbar-brand {
@@ -185,7 +192,7 @@ body::-webkit-scrollbar-thumb {
       left: 20%;
       right: 20%;
       height: 1px;
-      background-color: #fdc500;
+      background-color: blueviolet;
       transform: scaleX(0);
       transition: transform 0.1s ease-in; }
     .navbar-dark .navbar-nav .nav-link:hover::after {
@@ -223,14 +230,14 @@ body::-webkit-scrollbar-thumb {
 /** MAIN **/
 /** Info Bar **/
 #info_bar {
-  background-color: #003f88;
+  background-image: linear-gradient(to right, black, #9b84ee);
   border-bottom: 1px solid #000000;
-  box-shadow: 0 0 10px 0 #000000;
+  box-shadow: 0 0 10px 0 white;
   margin-top: -5.6px;
   padding: 10px 0;
   width: 100%; }
   #info_bar > div {
-    border-right: 1px solid #000000; }
+    border-right: 1px solid white; }
     #info_bar > div:last-child {
       border-right: none; }
   #info_bar div path {
@@ -247,8 +254,8 @@ body::-webkit-scrollbar-thumb {
 #brand-carousel {
   padding-bottom: 0px; }
   #brand-carousel .row > h5 {
-    border-bottom: 1px solid #c1c1c1;
-    color: #000000;
+    border-bottom: 1px solid blueviolet;
+    color: blueviolet;
     margin: 0 15px;
     padding: 30px 0 10px 0px;
     text-align: left;
@@ -358,7 +365,7 @@ body::-webkit-scrollbar-thumb {
   position: relative;
   text-align: center;
   width: 100%;
-  box-shadow: 0 0 10px 0 #000000; }
+  box-shadow: 0 0 10px 0 white; }
   #banner_top img {
     height: auto;
     width: 100%; }
@@ -370,7 +377,7 @@ body::-webkit-scrollbar-thumb {
     bottom: 0;
     width: 100%;
     margin: auto;
-    color: #ffffff;
+    color: #320061;
     font-weight: 700;
     letter-spacing: 5px;
     text-shadow: 3px 3px 5px #282828; }
@@ -397,22 +404,25 @@ body::-webkit-scrollbar-thumb {
     margin-bottom: 40px; }
   #contacto .contact-info h4 {
     width: 100%;
-    border-bottom: 1px solid #808080;
+    border-bottom: 1px solid blueviolet;
     font-weight: 600;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    color: blueviolet; }
   #contacto .contact-info h5 {
     font-size: 1.8rem;
     width: 100%;
-    font-weight: 600; }
+    font-weight: 600;
+    color: blueviolet; }
   #contacto .contact-info p {
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    color: white; }
   @media screen and (min-width: 768px) {
     #contacto .contact-form {
       margin-top: 29px; } }
   #contacto .contact-form input {
     height: 50px;
     width: 100%;
-    border: 1px solid #e1e1e1;
+    border: 1px solid blueviolet;
     padding-left: 20px;
     font-size: 1.5rem;
     color: #b7b7b7;
@@ -422,11 +432,11 @@ body::-webkit-scrollbar-thumb {
   #contacto .contact-form textarea {
     height: 150px;
     width: 100%;
-    border: 1px solid #e1e1e1;
+    border: 1px solid blueviolet;
     padding-left: 20px;
     padding-top: 12px;
     font-size: 1.5rem;
-    color: #b7b7b7;
+    color: blueviolet;
     margin-bottom: 24px;
     resize: none; }
     #contacto .contact-form textarea::placeholder {
@@ -445,22 +455,25 @@ body::-webkit-scrollbar-thumb {
     margin-bottom: 40px; }
   #reservas .contact-info h4 {
     width: 100%;
-    border-bottom: 1px solid #808080;
+    border-bottom: 1px solid blueviolet;
     font-weight: 600;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    color: blueviolet; }
   #reservas .contact-info h5 {
     font-size: 1.8rem;
     width: 100%;
-    font-weight: 600; }
+    font-weight: 600;
+    color: blueviolet; }
   #reservas .contact-info p {
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    color: white; }
   @media screen and (min-width: 768px) {
     #reservas .contact-form {
       margin-top: 29px; } }
   #reservas .contact-form input {
     height: 50px;
     width: 100%;
-    border: 1px solid #e1e1e1;
+    border: 1px solid blueviolet;
     padding-left: 20px;
     font-size: 1.5rem;
     color: #b7b7b7;
@@ -470,11 +483,11 @@ body::-webkit-scrollbar-thumb {
   #reservas .contact-form textarea {
     height: 150px;
     width: 100%;
-    border: 1px solid #e1e1e1;
+    border: 1px solid blueviolet;
     padding-left: 20px;
     padding-top: 12px;
     font-size: 1.5rem;
-    color: #b7b7b7;
+    color: blueviolet;
     margin-bottom: 24px;
     resize: none; }
     #reservas .contact-form textarea::placeholder {
@@ -483,19 +496,39 @@ body::-webkit-scrollbar-thumb {
     font-size: 1.6rem 0.6rem;
     padding: 14px 35px; }
 
+/** MAIN **/
+/** Nosotros **/
+#equipo,
+#labarberia {
+  padding: 30px 0;
+  font-size: 1.5rem;
+  color: blueviolet; }
+  #equipo p,
+  #labarberia p {
+    color: white; }
+
+/** MAIN **/
+/** Servicios **/
+#servicios {
+  padding: 30px 0;
+  font-size: 1.5rem;
+  color: blueviolet; }
+  #servicios p {
+    color: white; }
+
 /** FOOTER **/
 #footer {
   background: #000000;
-  color: #ffffff; }
+  color: blueviolet; }
   #footer .footer-top {
-    background: #1b1b1b;
+    background: #000000;
     padding: 30px 0 10px 0; }
     #footer .footer-top h5 {
       font-weight: bold;
       padding-bottom: 12px;
       position: relative; }
       #footer .footer-top h5::after {
-        background: #ffd500;
+        background: blueviolet;
         bottom: 0;
         content: '';
         display: block;
@@ -529,17 +562,19 @@ body::-webkit-scrollbar-thumb {
           #footer .footer-top .footer-links ul li:first-child {
             padding-top: 0; }
           #footer .footer-top .footer-links ul li .fa-chevron-right {
-            color: #ffffff; }
+            color: blueviolet; }
         #footer .footer-top .footer-links ul a {
           color: #ffffff;
           display: inline-block;
           line-height: 1; }
           #footer .footer-top .footer-links ul a:hover {
-            color: #ffd500;
+            color: blueviolet;
             text-decoration: none;
             transition: 0.3s; }
   #footer .footer-newsletter {
     font-size: 1.4rem; }
+    #footer .footer-newsletter p {
+      color: white; }
     #footer .footer-newsletter form {
       background: #ffffff;
       border-radius: 4px;
@@ -552,18 +587,18 @@ body::-webkit-scrollbar-thumb {
         padding: 4px 8px;
         width: calc(100% - 100px); }
       #footer .footer-newsletter form input[type="submit"] {
-        background: #ffd500;
+        background: blueviolet;
         border: 0;
         border-radius: 0 4px 4px 0;
         box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
         bottom: 0;
-        color: #000000;
+        color: black;
         padding: 0 20px;
         position: absolute;
         right: -1px;
         top: 0; }
         #footer .footer-newsletter form input[type="submit"]:hover {
-          background: #ffd500;
+          background: white;
           font-weight: 500;
           transition: 0.3s; }
   #footer .medios-pago {
@@ -587,7 +622,7 @@ body::-webkit-scrollbar-thumb {
     height: 36px;
     transition: 0.3s; }
     #footer .social-links a:hover {
-      background: #00509d;
+      background: blueviolet;
       color: #ffffff;
       text-decoration: none; }
 

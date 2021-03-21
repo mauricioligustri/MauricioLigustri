@@ -1,6 +1,6 @@
 /** PreLoader **/
 
-#preloder {
+#preloader {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -8,6 +8,7 @@
     left: 0;
     z-index: 999999;
     background: #000;
+    color: white;
 }
 
 .loader {

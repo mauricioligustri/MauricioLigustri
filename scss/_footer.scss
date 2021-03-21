@@ -86,6 +86,10 @@
 	.footer-newsletter {
 		font-size: $font-size-footer-footertop-footernewsletter;
 		
+		p{
+		color: $font-color-footertop-footernewsletterp;
+		}
+		
 		form {
 			background: $bg-color-footertop-footernewsletter-form;
 			border-radius: 4px;

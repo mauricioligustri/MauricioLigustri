@@ -14,19 +14,22 @@
     .contact-info {
         h4 {
             width: 100%;
-            border-bottom: 1px solid $border-color-contacto-contactinfo-h4;
+            border-bottom: 1px solid $border-color-reservas-contactinfo-h4;
             font-weight: 600;
-            margin-bottom: 30px;    
+            margin-bottom: 30px;
+            color: $font-color-reservas-contactinfoh4-input;    
         }
 
         h5 {
-            font-size: $font-size-contacto-contactinfo-h5;
+            font-size: $font-size-reservas-contactinfo-h5;
             width: 100%;
-            font-weight: 600;    
+            font-weight: 600;
+            color: $font-color-reservas-contactinfoh5-input;      
         }
 
         p{
-            margin-bottom: 15px;    
+            margin-bottom: 15px;
+            color: $font-color-reservas-contactinfop-input;     
         }
     }
 
@@ -40,35 +43,35 @@
         input {
         	height: 50px;
             width: 100%;
-            border: 1px solid $border-color-contacto-contactform-input;
+            border: 1px solid $border-color-reservas-contactform-input;
             padding-left: 20px;
-            font-size: $font-size-contacto-contactform-input;
-            color: $font-color-contacto-contactform-input;
+            font-size: $font-size-reservas-contactform-input;
+            color: $font-color-reservas-contactform-input;
             margin-bottom: 30px;
 
             &::placeholder {
-            	color: $font-color-contacto-contactform-input-placeholder;    
+            	color: $font-color-reservas-contactform-input-placeholder;    
             }
         }
 
         textarea {
         	height: 150px;
             width: 100%;
-            border: 1px solid $border-color-contacto-contactform-textarea;
+            border: 1px solid $border-color-reservas-contactform-textarea;
             padding-left: 20px;
             padding-top: 12px;
-            font-size: $font-size-contacto-contactform-textarea;
-            color: $font-color-contacto-contactform-textarea;
+            font-size: $font-size-reservas-contactform-textarea;
+            color: $font-color-reservas-contactform-textarea;
             margin-bottom: 24px;
             resize: none;
             
             &::placeholder {
-            	color: $font-color-contacto-contactform-textarea-placeholder;    
+            	color: $font-color-reservas-contactform-textarea-placeholder;    
             }
         }
 
         button {
-            font-size: $font-size-contacto-contactform-button.6rem;
+            font-size: $font-size-reservas-contactform-button.6rem;
             padding: 14px 35px;    
         }
     }    
